@@ -1,11 +1,11 @@
 <div class="container">
   <div class="d-flex align-items-center" style="height: 100px; card-grey">
-    <h2><center>Salut <%=current_user.first_name %>  - L'offre de <%=@offer.user.first_name%> t'interesse ? - Propose lui un Kimoun's deal</center></h2>
+    <h2 id="title-offer"><center>Salut <%=current_user.first_name %>  - L'offre de <%=@offer.user.first_name%> t'interesse ? - Propose lui un Kigen's deal</center></h2>
   </div>
 
 
   <div class="row">
-    <div class="px-4 col-6 show-offer">
+    <div class="col-6 show-offer">
       <div class="card card-offer">
           <img id="img-card" src="<%=@offer.image_url %>" class="card-img-top img-border-top" alt="<%=@offer.name.upcase %>">
           <div class="card-body">
@@ -60,7 +60,7 @@
   </div>
 
   <div class="d-flex align-items-center">
-    <div class="show-map-container">
+    <div class="show-map-container" style="margin-bottom: 2rem;">
         <div style="width: 100%; height: 100%;"
           data-controller="map"
           data-map-markers-value="<%= @markers.to_json %>"

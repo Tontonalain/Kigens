@@ -81,11 +81,14 @@
   border:	#73bfb8 solid 3px !important;
   width: 21rem;
   padding: 0 !important;
+  box-shadow: 10px 5px 5px #aebebd;
+  margin: 2rem 0 2rem auto;
 }
 
 .show-offer {
   .card-offer {
     width: unset !important;
+    margin-left: 0%;
   }
 }
 
@@ -110,4 +113,9 @@
 
 #text-description {
   color: #444444;
+}
+
+#border-card {
+  border-top-left-radius: 0.90%;
+  border-top-right-radius: 0.90%;
 }
